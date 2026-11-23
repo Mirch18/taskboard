@@ -2,12 +2,97 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Про проєкт</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про автора | TaskBoard</title>
 </head>
 <body>
-  <h1>Про TaskBoard</h1>
-  <p>TaskBoard: дошка завдань, яку ми будуємо на курсі.</p>
-  <p>Проєкт веде Арсен Кравець (ІПЗ 3/2). На курсі я хочу пройти шлях від верстки до власного сервера й бази даних.</p>
-  <a href="index.html">На головну</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Логотип TaskBoard" width="36" height="36">
+      <span>TaskBoard</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Головна</a>
+      <a href="about.html">Про автора</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="card profile">
+      <figure>
+        <img src="images/avatar.png" alt="Аватар з ініціалами автора" width="150" height="150">
+        <figcaption>Інженерія програмного забезпечення, 3 курс</figcaption>
+      </figure>
+      <div class="profile-text">
+        <h1>Про автора</h1>
+        <p>Привіт! Я <strong>Арсен Кравець</strong> з групи ІПЗ 3/2. Проєкт <em>TaskBoard</em> — моя перша спроба зібрати вебзастосунок від початку до кінця.</p>
+        <p>Найбільше мені цікаво, як сторінка в браузері спілкується із сервером, тому чекаю частини курсу про Flask.</p>
+      </div>
+    </article>
+
+    <p>
+      Розділи сторінки:
+      <a href="#skills">навички</a> ·
+      <a href="#plan">план навчання</a> ·
+      <a href="#contacts">контакти</a>
+    </p>
+
+    <section class="card" id="skills">
+      <h2>Навички</h2>
+      <ul>
+        <li>HTML5 і CSS3</li>
+        <li>JavaScript</li>
+        <li>Python та ООП</li>
+        <li>Git і GitHub</li>
+        <li>Робота в терміналі</li>
+      </ul>
+    </section>
+
+    <section class="card" id="plan">
+      <h2>Мій план навчання</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Етап</th>
+            <th>Що вивчаю</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Системи контролю версій</td>
+            <td>Завершено</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Верстка на HTML і CSS</td>
+            <td>Зараз</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>JavaScript у браузері</td>
+            <td>Попереду</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Сервер на Flask і SQL</td>
+            <td>Попереду</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="contacts">
+      <h2>Контакти</h2>
+      <p>Написати мені: <a href="mailto:kravets.a.a_ipz24@rcit.ukr.education">kravets.a.a_ipz24@rcit.ukr.education</a></p>
+      <p>Репозиторії: <a href="https://github.com/Mirch18" target="_blank" rel="noopener">GitHub Mirch18</a></p>
+      <p><a href="index.html">← Повернутись на головну</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Арсен Кравець · TaskBoard</p>
+  </footer>
 </body>
 </html>

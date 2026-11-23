@@ -3,14 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TaskBoard</title>
+  <title>TaskBoard: дошка завдань</title>
 </head>
 <body>
-  <h1>Дошка завдань TaskBoard</h1>
-  <img src="images/logo.png" alt="Логотип TaskBoard" width="200">
-  <p>Моя перша сторінка. Тут буде дошка завдань.</p>
-  <p>TaskBoard допоможе керувати завданнями команди.</p>
-  <p>Автор: <strong>Арсен Кравець</strong>, група ІПЗ 3/2</p>
-  <a href="https://developer.mozilla.org/uk/">Довідник MDN</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Логотип TaskBoard" width="36" height="36">
+      <span>TaskBoard</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Головна</a>
+      <a href="about.html">Про автора</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h1>Дошка завдань</h1>
+      <p>Тут з'явиться дошка, де кожне завдання — це картка: її можна додати, перенести в іншу колонку й закрити, коли справу зроблено. Поки що це стартова сторінка навчального проєкту.</p>
+      <details>
+        <summary>Що таке TaskBoard?</summary>
+        <p>Це навчальний вебзастосунок у стилі канбан-дошки. Протягом курсу він обросте версткою, JavaScript, сервером на Flask і базою даних.</p>
+      </details>
+      <p>Матеріали, які стали в пригоді: <a href="docs/links.html">корисні посилання</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Арсен Кравець · TaskBoard</p>
+  </footer>
 </body>
 </html>

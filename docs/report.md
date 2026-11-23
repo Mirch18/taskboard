@@ -51,3 +51,20 @@ b3402a0 Додати логотип, звіт і .gitignore
 - У гілці experiment прибрав з головної рядок автора і посилання на MDN, закомітив. Звичайне git branch -d гілку не видалило, бо вона не злита, тому видалив через git branch -D. У main усе лишилось на місці, git status — чисто.
 - git log --oneline -- index.html показав 5 комітів: тільки ті, що змінювали саме цей файл.
 - Learn Git Branching, блок «Вступ»: рівень 1 — git commit двічі; рівень 2 — одна команда git switch -c bugFix; рівень 3 — git switch -c bugFix, git commit, git switch main, git commit, git merge bugFix (5 команд, як в еталоні). Усі три рівні з зірочкою.
+
+
+## W-07. Сторінка «Про автора»
+Кравець Арсен, ІПЗ 3/2
+
+Семантична розмітка означає, що для кожної частини сторінки я беру тег, який сам каже, що це за частина: шапка — header, меню — nav, головний вміст — main, окремі блоки — section або article, низ сторінки — footer. Div нічого не говорить про зміст, а семантичні теги розуміють і браузер, і пошукові системи, і екранні читалки для незрячих людей. Ще один плюс: код стає зрозумілішим, і в DevTools одразу видно структуру сторінки.
+
+Теги, які я використав:
+- каркас: DOCTYPE, html, head, meta (charset, viewport), title, body;
+- семантика: header, nav, main, section, article, figure, figcaption, footer, details, summary;
+- текст: h1, h2, p, strong, em, span;
+- список: ul, li;
+- таблиця: table, thead, tbody, tr, th, td;
+- посилання та медіа: a (внутрішні, якірні #skills/#plan/#contacts, mailto:, зовнішнє з target="_blank" і rel="noopener"), img з alt, width і height;
+- div — тільки для текстової частини профілю (клас profile-text).
+
+Валідатор W3C: 0 помилок для index.html, about.html і docs/links.html.
